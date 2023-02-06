@@ -1,52 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-31T18:19:54 IST" name="Default suite" finished-at="2023-01-31T18:20:21 IST" duration-ms="26923">
+  <suite started-at="2023-02-06T17:10:21 IST" name="Suite" finished-at="2023-02-06T17:14:32 IST" duration-ms="251160">
     <groups>
     </groups>
-    <test started-at="2023-01-31T18:19:54 IST" name="Default test" finished-at="2023-01-31T18:20:21 IST" duration-ms="26923">
+    <test started-at="2023-02-06T17:10:21 IST" name="Test" finished-at="2023-02-06T17:14:32 IST" duration-ms="251160">
       <class name="testCases.ContactForm">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ContactForm@3c7f66c4]" started-at="2023-01-31T18:19:54 IST" name="setUp" finished-at="2023-01-31T18:20:06 IST" duration-ms="11686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.ContactForm@3c7f66c4]" started-at="2023-01-31T18:20:06 IST" name="setUp" finished-at="2023-01-31T18:20:17 IST" duration-ms="11773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="contactUs(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.ContactForm@3c7f66c4]" started-at="2023-01-31T18:20:17 IST" name="contactUs" data-provider="testdata" finished-at="2023-01-31T18:20:21 IST" duration-ms="3434" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Steven]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[s.steven.3115@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[7894561230]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[appwrk]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="contactUs()[pri:0, instance:testCases.ContactForm@2ea41516]" started-at="2023-02-06T17:10:41 IST" name="contactUs" finished-at="2023-02-06T17:10:44 IST" duration-ms="3017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUs -->
       </class> <!-- testCases.ContactForm -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.BrokenLinks">
+        <test-method signature="brokenLinks()[pri:0, instance:testCases.BrokenLinks@3a44431a]" started-at="2023-02-06T17:10:44 IST" name="brokenLinks" finished-at="2023-02-06T17:14:32 IST" duration-ms="227396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brokenLinks -->
+      </class> <!-- testCases.BrokenLinks -->
+      <class name="base.BaseTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:base.BaseTest@3ee37e5a]" started-at="2023-02-06T17:10:21 IST" name="setUp" finished-at="2023-02-06T17:10:41 IST" duration-ms="20616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="driverClose()[pri:0, instance:base.BaseTest@3ee37e5a]" started-at="2023-02-06T17:14:32 IST" name="driverClose" finished-at="2023-02-06T17:14:32 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- base.BaseTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -5,6 +5,7 @@
     <classes>
       <class name="base.BaseTest"/>
       <class name="testCases.ContactForm"/>
+      <class name="testCases.BrokenLinks"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
