@@ -12,7 +12,7 @@ import base.BaseTest;
 
 public class BrokenLinks extends BaseTest {
 
-
+	@Test
 	public void brokenLinks() {
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));

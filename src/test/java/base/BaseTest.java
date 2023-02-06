@@ -1,6 +1,6 @@
 package base;
 
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -17,18 +17,21 @@ public class BaseTest {
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static Properties loc = new Properties();
+	public static Properties inp = new Properties();
 	public static FileReader fr;
 	public static FileReader fr1;
+	public static FileReader fr2;
 
-	@BeforeMethod
 	@BeforeTest
 	public void setUp() throws IOException {
 
 		if (driver == null) {
 			fr = new FileReader(System.getProperty("user.dir") + "/src/test/resources/configfiles/config.properties");
 			fr1 = new FileReader(System.getProperty("user.dir") + "/src/test/resources/configfiles/locator.properties");
+			fr2 = new FileReader(System.getProperty("user.dir") + "/src/test/resources/configfiles/input.properties");
 			prop.load(fr);
 			loc.load(fr1);
+			inp.load(fr2);
 		}
 
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
@@ -42,5 +45,9 @@ public class BaseTest {
 			driver.manage().window().maximize();
 			driver.get(prop.getProperty("testurl"));
 		}
+	}
+	@AfterTest
+	public void driverClose() {
+		driver.close();
 	}
 }
