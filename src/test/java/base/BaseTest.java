@@ -47,7 +47,8 @@ public class BaseTest {
 		}
 	}
 	@AfterTest
-	public void driverClose() {
+	public void driverClose() throws InterruptedException {
+		Thread.sleep(5000);
 		driver.close();
 	}
 }
