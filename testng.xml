@@ -6,6 +6,7 @@
       <class name="base.BaseTest"/>
       <class name="testCases.ContactFormTest"/>
       <class name="testCases.BrokenLinksTest"></class>
+      <class name="testCases.HoverTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
