@@ -36,7 +36,7 @@ public class ContactFormTest extends BaseTest{
 		if(thank.isDisplayed()) {
 			System.out.println("Passed");
 			File SrcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			Files.copy(SrcFile, new File ("/home/appwrk/automation-framework/AutomationFramework/src/test/resources/Screenshots/Passing.png"));
+			Files.copy(SrcFile, new File(System.getProperty("user.dir")+ "/src/test/resources/Screenshots/Passing.png"));
 		}else {
 			System.out.println("Failed");
 		}
