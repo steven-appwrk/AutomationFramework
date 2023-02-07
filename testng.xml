@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="base.BaseTest"/>
-      <class name="testCases.ContactForm"/>
-      <class name="testCases.BrokenLinks"></class>
+      <class name="testCases.ContactFormTest"/>
+      <class name="testCases.BrokenLinksTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
